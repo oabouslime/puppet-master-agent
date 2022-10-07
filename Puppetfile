@@ -17,19 +17,12 @@ mod 'apache',
 #  branch: 'docs_experiment'
 
 moduledir 'thirdparty'
-mod 'puppetlabs/apache'
+mod 'puppetlabs-apache', '8.2.1'
 mod 'puppetlabs/ntp',:latest
 mod 'puppetlabs/stdlib','0.10.0'
 
 # Modules from Git
 # # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
-mod 'apache',
-  git: 'https://github.com/puppetlabs/puppetlabs-apache',
-  commit: '1b6f89afdde0df7f9433a163d5c4b5328eac5779'
-
-mod 'apache',
-  git:    'https://github.com/puppetlabs/puppetlabs-apache',
-  branch: 'docs_experiment'
 
 mod 'site_data_1',
   :git => 'git@example.com:site_data_1.git',
